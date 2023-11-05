@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SafBro</string>
+    <string name="web_client_id">622539592959-2sulunopvgfqra29jee9m81vhd6759o3.apps.googleusercontent.com</string>
+    <string name="title_activity_bottomnavandhomeactivity">bottomnavandhomeactivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_feedback">FeedBack</string>
+
+</resources>

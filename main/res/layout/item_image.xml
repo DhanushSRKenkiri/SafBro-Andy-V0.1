@@ -1,0 +1,147 @@
+<!-- item_image.xml -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="390dp"
+        android:layout_height="260dp"
+        android:minWidth="200dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/thumnail_background"
+        android:radius="50dp"
+        android:clickable="true"
+        android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_image"
+        android:radius="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Descrption"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="12sp"
+                android:id="@+id/description"
+                android:textSize="8sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="150dp"
+            android:id="@+id/user_interface"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="23dp"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <!-- Like Button -->
+                <ImageView
+                    android:id="@+id/likeButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/baseline_thumb_up_off_alt_24" />
+
+                <!-- Share Button -->
+                <ImageView
+                    android:id="@+id/shareButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/baseline_share_24" />
+
+                <!-- Download Button -->
+                <ImageView
+                    android:id="@+id/downloadButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/baseline_file_download_24" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/channelImage"
+            android:layout_width="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_account_box_24" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="280dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="60dp"
+            android:text="Image Title"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/itemCreatorProfile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="Channel Name"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fivestar"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/fivestar" />
+
+
+</LinearLayout>

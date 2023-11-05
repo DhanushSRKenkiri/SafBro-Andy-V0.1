@@ -1,0 +1,16 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLayout"
+    android:layout_width="390dp"
+    android:layout_height="260dp"
+    android:minWidth="200dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/item_boo_background"
+    android:radius="50dp"
+    android:clickable="true"
+    android:focusable="true">
+
+</LinearLayout>

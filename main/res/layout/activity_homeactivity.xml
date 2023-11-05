@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeactivity"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/topBarLayout"
+        layout="@layout/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Include fragment_home.xml -->
+    <include
+        android:id="@+id/fragment_home"
+        layout="@layout/fragment_home"
+        android:visibility="visible" />
+
+    <!-- Include fragment_library.xml -->
+    <include
+        android:id="@+id/fragment_library"
+        layout="@layout/fragment_library"
+        android:visibility="gone" />
+
+    <!-- Include fragment_search.xml -->
+    <include
+        android:id="@+id/fragment_search"
+        layout="@layout/fragment_search"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fragment_feedback"
+        layout="@layout/fragment_feedback"
+        android:visibility="gone" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:elevation="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

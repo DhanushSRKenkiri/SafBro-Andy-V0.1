@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="201dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        tools:listitem="@layout/item_image"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <include
+        android:id="@+id/bottomAudioPlayer"
+        layout="@layout/audio_popup_layout_in_app"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="57dp"/>
+
+</LinearLayout>
